@@ -1,0 +1,238 @@
+main {
+    background: #f3f4f6;
+    grid-area: main;
+    overflow-y: auto;
+
+}
+
+.main__container{
+    padding: 20px 35px;
+
+}
+
+.main__title{
+    display: flex;
+    align-items: center;
+
+}
+
+.main__title > img{
+    max-height: 100px;
+    object-fit: contain;
+    margin-right: 20px;
+    border-radius: 90px;
+}
+
+.main__greeting > h1 {
+    font-size: 24px;
+    color: #2e4a66;
+    font-weight: 700;
+}
+
+.main__greeting > p {
+    font-size: 14px;
+    font-weight: 700;
+    color: #a5aaaa;
+
+}
+
+.main__cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 20px 0 ;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70px;
+    padding: 25px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px #8d8989, -5px -5px 13px #8d8989;
+}
+.card > i {
+    
+    font-size: medium;
+}
+
+
+.card_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+.card_inner > span {
+    font-size: 25px;
+}
+
+.charts{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+
+}
+
+.charts__left{
+    padding: 25px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 5px 5px 10px #8d8989, -5px -5px 13px #8d8989;
+}
+
+.charts__left__title{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.charts__left__title > div > h1 {
+
+font-size: 24px;
+
+color: #2e4a66;
+
+margin-bottom: 5px;
+
+}
+.charts__left__title > div > p {
+    font-size: 14px;
+    font-weight: 700;
+    color: #a5aaaa;
+}
+
+.charts__left__title  > i {
+    font-size: 20px;
+    color: #fff;
+    background: #FFC100;
+    border-radius: 200px 0px 200px 200px;
+    -webkit-border-radius:200px 0px 200px 200px ;
+    border: 1px solid #a5aaaa;
+    padding: 15px;
+}
+
+.charts__right{
+
+    padding: 25px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 5px 5px 10px #8d8989, -5px -5px 13px #8d8989;
+}
+
+.charts__right__title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.charts__right__title > div > h1 {
+
+    font-size: 24px;
+    
+    color: #2e4a66;
+    
+    margin-bottom: 5px;
+    
+}
+.charts__right__title > div > p {
+    font-size: 14px;
+    font-weight: 700;
+    color: #a5aaaa;
+}
+
+.charts__right__title  > i {
+    font-size: 20px;
+    color: #fff;
+    background: #FFC100;
+    border-radius: 200px 0px 200px 200px;
+    -webkit-border-radius:200px 0px 200px 200px ;
+    border: 1px solid #a5aaaa;
+    padding: 15px;
+}
+    
+.charts__right__cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);  
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card1{
+    background: #d1ecf1;
+    color: #35a4ba;
+    text-align: center;
+    padding: 25px;
+    border-radius: 5px;
+    font-size:14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 2px 2px 5px #8d8989, -2px -2px 5px #8d8989;
+}
+
+.card2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: #eff1d1;
+    color: #35a4ba;
+    text-align: center;
+    padding: 25px;
+    border-radius: 5px;
+    font-size:14px;
+    box-shadow: 2px 2px 5px #8d8989, -2px -2px 5px #8d8989;
+}
+
+.card3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: #e0f1d1;
+    color: #35a4ba;
+    text-align: center;
+    padding: 25px;
+    border-radius: 5px;
+    font-size:14px;
+    box-shadow: 2px 2px 5px #8d8989, -2px -2px 5px #8d8989;
+}
+
+.card4{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: #ddd1f1;
+    color: #35a4ba;
+    text-align: center;
+    padding: 25px;
+    border-radius: 5px;
+    font-size:14px;
+    box-shadow: 2px 2px 5px #8d8989, -2px -2px 5px #8d8989;
+}
+
+@media only screen and (max-width: 855px) {
+    .main__cards{
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-bottom: 0;   
+    }
+
+    .charts {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    .charts__right__cards{
+        grid-template-columns: 1fr;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+
+
+
+}
+
